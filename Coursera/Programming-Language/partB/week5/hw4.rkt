@@ -1,0 +1,112 @@
+
+#lang racket
+
+(provide (all-defined-out)) ;; so we can put tests in a second file
+
+;; put your code below
+
+;(1)
+(define (sequence low high stride)
+  (if (> low high)
+      null
+      (cons low (sequence (+ low stride) high stride))))
+
+;(2)
+(define (string-append-map xs suffix)
+  (map (lambda (s) (string-append s suffix)) xs))
+
+;(3)
+(define (list-nth-mod xs n)
+  (cond [(< n 0) (error "list-nth-mod: negative number")]
+        [(null? xs) (error "list-nth-mod: empty list")]
+        [#t (car (list-tail xs (remainder n (length xs))))]))
+
+;(4)
+;good implementation is "let ([next (s)]) ... "in this case every thunk only evaluated at most once
+;if the evaluation for a thunk is expensive to compute, then use a local variable to save the evaluation of the thunk is attraction and necessary.
+(define (stream-for-n-steps s n)
+  (if (= n 0)
+      null
+      (cons (car (s)) (stream-for-n-steps (cdr (s)) (- n 1)))))
+
+(define mystream
+  (letrec ([f (lambda (x) (cons x (lambda () (f (* x 2)))))])
+    (lambda () (f 1))))
+;(5)
+(define funny-number-stream
+  (letrec ([f (lambda (x) (cons (if (= 0 (remainder x 5)) (* -1 x) x) (lambda () (f (+ x 1)))))])
+    (lambda () (f 1))))
+
+;(6)
+(define dan-then-dog
+  (letrec ([f (lambda (pic) (cons pic (lambda () (f (if (string=? pic "dog.jpg") "dan.jpg" "dog.jpg")))))])
+    (lambda () (f "dan.jpg"))))
+
+;(7)
+;At the begining, I write this version: (lambda() (cons (cons 0 (car (s))) (lambda () (stream-add-zero (cdr (s))))))
+;Could you find out where is the mistake?
+;In fact, (stream-add-zero (cdr (s))) itself is a stream
+;so if I wrap up it by lambda()
+;then it will beceome (lambda () (lambda () pair)) which is thunk wrapped by a thunk- -
+;if if you  ((lambda () (stream-add-zero s))) then the result is another thunk instead of a pair what we really need
+
+;again it's necessary to hold the evaluation for a thunk by local variable if the evaluation is expensive!!!
+(define (stream-add-zero s)
+  (lambda () (cons (cons 0 (car (s))) (stream-add-zero (cdr (s))))))
+
+;(8)
+(define (cycle-lists xs ys)
+  (letrec ([f (lambda (n) (cons (cons (list-nth-mod xs n) (list-nth-mod ys n)) (lambda () (f (+ n 1)))))])
+    (lambda () (f 0))))
+
+;(9)
+(define (vector-assoc v vec)
+  (letrec ([len (vector-length vec)]
+           [f (lambda (index)
+                (if (= index len)
+                    #f
+                    (let ([curVal (vector-ref vec index)])
+                      (if (and (cons? curVal) (equal? (car curVal) v))    ;must use equal? because the type of v may not be int
+                          curVal
+                          (f (+ index 1))))))])
+    (f 0)))
+
+;(10)
+;Can someone tell me what should I do if I want to only execute one branch in a if-expression?
+;i.e. normally if-expression is represented by (if e1 e2 e3),if I want to do something when e1 is true while nothing will be done if e1 is false
+;In this case, what expression e3 should be?
+(define (cached-assoc xs n)
+  (letrec ([memo (make-vector n #f)]
+           [index 0]
+           [AddCnt (lambda () (if (= (+ index 1) n) (set! index 0) (set! index (+ index 1))))]
+           ;the function isInMemo is exactly equal to vector-assoc above:(
+           ;[isInMemo (lambda (v ind) (let ([ans (vector-ref memo ind)])
+            ;                           (cond [(>= ind n) #f]
+             ;                              [(not ans) #f]
+              ;                             [(equal? v (car ans)) ans ]
+               ;                            [#t (isInMemo v (+ ind 1))])))]
+           ;[printMemo (lambda (ind) (if (= ind n) (print "end") (begin (print (vector-ref memo ind)) (printMemo (+ ind 1)))))]  
+           [updateMemo (lambda (thisPair) (begin (vector-set! memo index thisPair) (AddCnt)))]
+           [helper (lambda (val) (or (vector-assoc val memo) (let ([ret (assoc val xs)])
+                                                               (if ret
+                                                                   (begin (updateMemo ret) ret)
+                                                                   #f))))])
+    (lambda (v) (helper v))))
+
+(define test (cached-assoc (list (cons 1 2) (cons 3 4) (cons 5 6) (cons 7 8) (cons 9 10) (cons 11 12) (cons 13 14) (cons 15 16)(cons 17 18)(cons 19 20)) 5))
+
+;(11)
+;We must test whether the result of e2 is a number
+;otherwise, the auto-grader will say "Exceeded the allotted grading time"
+(define-syntax while-less
+  (syntax-rules (do)
+    [(while-less e1 do e2)
+     (letrec ([condition  e1]
+              [e2Val e2]
+              [f (lambda(e) (if (>= e condition)
+                                #t
+                                (f e2)))])
+       (if (number? e2Val) (f e2Val) #t))]))
+
+;(define a 2)
+;(while-less 8 do (begin (print "x") (set! a (+ 1 a)) a))

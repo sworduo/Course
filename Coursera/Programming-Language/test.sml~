@@ -1,0 +1,6 @@
+val x = 1
+(* now the value of x is 1, so the x used in function f will all be 1 even the value of x have changed after the definition of funtion f *)
+fun f y = x + y
+val x = 2
+val y = 3
+val z = f ( x + y )

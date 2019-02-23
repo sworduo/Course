@@ -1,0 +1,8 @@
+The procedures for Linear Regression are as followings:
+First of all, you should determine that linear regression fix the data you have.
+Secondly, if there are more than one features contributing to the target variable,then you should consider feature scaling which is necessary if the range of features have a stark contrast.And I think it is data preprocessing.
+Next,you should deduce the formula of cost function and gradient descent which is trivial concerning linear regression.
+And the most important thing is about the selection of learning rate,which is a big deal for everyone.
+What's more, please keep in mind that our goal for linear regression is the coefficient corresponding to every features,so don't forget what you really want after complete the procedures mentioned above.
+It's better to record every result of cost function and type them in the same plot when you change the learning rate.It's convenient to visualize the diffience between every learning rate you choose.
+So,the best way to study is practicing.
