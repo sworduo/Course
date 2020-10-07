@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/sworduo/Documents/Course/Coursera/scala-specialization/Functional-Programming-in-Scala/example/src/main/scala/example/Lists.scala:45:23: class java.util.NoSuchElementException is not a value[0m
+[0m[[0m[31merror[0m] [0m[0m      throw java.util.NoSuchElementException[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
