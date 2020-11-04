@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b7f6fdf-58d7-422f-a31c-63dc611c0abc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/libraries/sbt__com_novocode_junit_interface_0_11_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/libraries/sbt__junit_junit_4_11_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/libraries/sbt__org_hamcrest_hamcrest_core_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/libraries/sbt__org_scala_lang_scala_library_2_12_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/libraries/sbt__org_scala_sbt_test_interface_1_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/modules/progfun1-funsets-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/modules/progfun1-funsets.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../funsets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/project/target/config-classes/$69797ab2dbf72a52ff6a$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/project/target/config-classes/$69797ab2dbf72a52ff6a.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/project/target/config-classes/$69797ab2dbf72a52ff6a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/project/target/streams/compile/compileIncremental/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/project/target/streams/compile/compileIncremental/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/project/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/project/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/project/target/streams/compile/copyResources/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/project/target/streams/compile/copyResources/$global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/src/main/scala/funsets/FunSets.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/src/main/scala/funsets/FunSets.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/src/test/scala/funsets/FunSetSuite.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/src/test/scala/funsets/FunSetSuite.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/target/scala-2.12/classes/funsets/FunSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/target/scala-2.12/classes/funsets/FunSets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/target/scala-2.12/test-classes/funsets/FunSetSuite$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/target/scala-2.12/test-classes/funsets/FunSetSuite$$anon$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/target/scala-2.12/test-classes/funsets/FunSetSuite$$anon$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/target/scala-2.12/test-classes/funsets/FunSetSuite$$anon$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/target/scala-2.12/test-classes/funsets/FunSetSuite$TestSets.class" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/target/scala-2.12/test-classes/funsets/FunSetSuite$TestSets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../funsets/target/scala-2.12/test-classes/funsets/FunSetSuite.class" beforeDir="false" afterPath="$PROJECT_DIR$/../funsets/target/scala-2.12/test-classes/funsets/FunSetSuite.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -111,7 +112,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604500991082" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604507326790" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../funsets" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -208,16 +209,15 @@
       <workItem from="1602137318641" duration="8075000" />
       <workItem from="1604469528760" duration="289000" />
       <workItem from="1604474422934" duration="19000" />
-      <workItem from="1604477554748" duration="3674000" />
+      <workItem from="1604477554748" duration="3690000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12057000" />
+    <option name="totallyTimeSpent" value="12073000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1849" height="938" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="52" width="1849" height="910" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579035" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -228,7 +228,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32896304" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32896304" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

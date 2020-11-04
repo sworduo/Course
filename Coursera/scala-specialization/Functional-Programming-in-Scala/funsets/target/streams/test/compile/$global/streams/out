@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/sworduo/Documents/Course/Coursera/scala-specialization/Functional-Programming-in-Scala/funsets/src/test/scala/funsets/FunSetSuite.scala:82:21: not found: value i1[0m
+[0m[[0m[31merror[0m] [0m[0m      val d1 = diff(i1, i2)[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/sworduo/Documents/Course/Coursera/scala-specialization/Functional-Programming-in-Scala/funsets/src/test/scala/funsets/FunSetSuite.scala:82:25: not found: value i2[0m
+[0m[[0m[31merror[0m] [0m[0m      val d1 = diff(i1, i2)[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

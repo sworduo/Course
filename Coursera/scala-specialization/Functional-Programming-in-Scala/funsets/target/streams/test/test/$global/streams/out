@@ -1,0 +1,32 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector()[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for com.novocode.junit.JUnitFramework produced 1 initial tasks for 1 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(funsets.FunSetSuite, sbt.ForkMain$AnnotatedFingerscan@69ae4259, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mforall test[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mforall test[0m finished, took 0.082 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36msingleton set one contains one[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36msingleton set one contains one[0m finished, took 0.002 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36minterset test[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36minterset test[0m finished, took 0.003 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mexists test[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mexists test[0m finished, took 0.003 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36munion contains all elements of each set[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36munion contains all elements of each set[0m finished, took 0.002 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mfilter test[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mfilter test[0m finished, took 0.003 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mdiff test[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mdiff test[0m finished, took 0.002 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36munion {1,3,4,5,7,1000} and {1,2,3,4}[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36munion {1,3,4,5,7,1000} and {1,2,3,4}[0m finished, took 0.004 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mcontains is implemented[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mcontains is implemented[0m finished, took 0.002 sec[0m
+[0m[[0m[0minfo[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mmap test[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest funsets.[33mFunSetSuite[0m.[36mmap test[0m finished, took 0.006 sec[0m
+[0m[[0m[0minfo[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 10 total, 0.24s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 10 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 10, Failed 0, Errors 0, Passed 10[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	funsets.FunSetSuite[0m
