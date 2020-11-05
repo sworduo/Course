@@ -3,6 +3,7 @@ package objsets
 object TweetReader {
 
   object ParseTweets {
+    //将每一行数据转为map，多行数据串行成一个list
     def regexParser(s: String): List[Map[String, Any]] = {
       // In real life. you would use an actual JSON library...
       val tweetRegex = """^\{ .*"user": "([^"]+)", "text": "([^"]+)", "retweets": ([\\.0-9]+) \},?$""".r
@@ -18,6 +19,7 @@ object TweetReader {
         new Tweet(user, text.toString, retweets.toString.toDouble.toInt)
       }
 
+    //将数据打包成tweet类型
     def getTweetData(user: String, json: String): List[Tweet] = {
       // is list
       val l = regexParser(json)

@@ -134,12 +134,31 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
     if(p(elem)) right.filterAcc(p, left,filterAcc(p, acc)).incl(elem)
     else right.filterAcc(p, left,filterAcc(p, acc))
 
- // def union(that: TweetSet): TweetSet = left.union(right).union(that).incl(elem)
-  def union(that: TweetSet): TweetSet = that.incl(elem).union(left).union(right)
+  def union(that: TweetSet): TweetSet = left.union(right).union(that).incl(elem)
+
+
+  //TODO搞错了，这里每个string需要找到其retreet来进行比较，而不是单纯的找到最右边元素（只能代表字母顺序最大，不代表retreet max)
+//  def mostRetweeted: Tweet =
+//    try{
+//      val l = mostRetweeted(left)
+//    }catch {
+//      case e: java.util.NoSuchElementException => elem
+//    }
+
+  //  def descendingByRetweet: TweetList ={
+//    def helper(t: Tweet, xs: TweetList): TweetList =
+//      try{
+//        val mostRT = mostRetweeted
+//        helper(remove(mostRT), new Cons(xs, mostRT))
+//      }catch {
+//        case e: java.util.NoSuchElementException => new Cons(xs, Nil)
+//      }
+//    helper(elem)
+//  }
 
   def mostRetweeted: Tweet =
     try{
-      mostRetweeted(right)
+      val l = mostRetweeted(left)
     }catch {
       case e: java.util.NoSuchElementException => elem
     }
@@ -208,8 +227,9 @@ object GoogleVsApple {
   val google = List("android", "Android", "galaxy", "Galaxy", "nexus", "Nexus")
   val apple = List("ios", "iOS", "iphone", "iPhone", "ipad", "iPad")
 
-  lazy val googleTweets: TweetSet = ???
-  lazy val appleTweets: TweetSet = ???
+  //TODO这里错了
+  lazy val googleTweets: TweetSet = allTweets.filter(google.exists(s=>s.contains()))
+  lazy val appleTweets: TweetSet = allTweets.filter(apple.exists(s=>s.contains()))
 
   /**
    * A list of all tweets mentioning a keyword from either apple or google,
