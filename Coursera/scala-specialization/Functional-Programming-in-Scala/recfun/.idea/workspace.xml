@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b7f6fdf-58d7-422f-a31c-63dc611c0abc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../objsets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../objsets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../objsets/src/main/scala/objsets/TweetReader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../objsets/src/main/scala/objsets/TweetReader.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../objsets/src/main/scala/objsets/TweetSet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../objsets/src/main/scala/objsets/TweetSet.scala" afterDir="false" />
-    </list>
+    <list default="true" id="0b7f6fdf-58d7-422f-a31c-63dc611c0abc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
     <ignored path="$PROJECT_DIR$/project/target/" />
@@ -101,7 +97,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1604507326790" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../objsets" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -198,16 +194,17 @@
       <workItem from="1604474422934" duration="19000" />
       <workItem from="1604477554748" duration="3690000" />
       <workItem from="1604590238958" duration="643000" />
+      <workItem from="1604636994315" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12716000" />
+    <option name="totallyTimeSpent" value="12731000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="323" y="110" width="1350" height="570" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3611963" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3673313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
