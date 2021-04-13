@@ -1,0 +1,13 @@
+# ninja log v5
+1	29	1618217997	CMakeFiles/kernel.img.dir/boot/start.S.o	81649b2294decfd2
+1	30	1618217997	CMakeFiles/kernel.img.dir/boot/tools.S.o	a6053a1218a429e5
+0	39	1618217997	CMakeFiles/kernel.img.dir/boot/init_c.c.o	c924de655dfded0e
+0	40	1618217997	CMakeFiles/kernel.img.dir/boot/mmu.c.o	ebe917a40adbc000
+1	40	1618217997	CMakeFiles/kernel.img.dir/boot/uart.c.o	31f86a1251b5012a
+2	44	1618217997	kernel/CMakeFiles/chos-arch.dir/head.S.o	e8f56311eb744eca
+29	63	1618217997	kernel/CMakeFiles/chos-arch.dir/common/tools.S.o	1007fef1093f1785
+30	67	1618217997	kernel/CMakeFiles/chos-arch.dir/common/uart.c.o	d7b139bfb28be819
+13	74	1618217997	kernel/CMakeFiles/chos-arch.dir/main.c.o	872489540c806292
+13	75	1618217997	kernel/CMakeFiles/chos-arch.dir/monitor.c.o	94f53190e95909d0
+39	92	1618217997	kernel/CMakeFiles/chos-arch.dir/common/printk.c.o	5102cb22fd028339
+92	100	1618217997	kernel.img	4c46d38df2c9013d
